@@ -1,0 +1,51 @@
+.bo{min-height:100vh;background:#07080A;color:#F2F4F7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px}
+.bo *{box-sizing:border-box}
+.bo-top{height:60px;display:flex;align-items:center;gap:8px;padding:0 16px;border-bottom:1px solid #2C323B;position:sticky;top:0;background:#07080A;z-index:10}
+.bo-top .home{width:40px;height:40px;border-radius:10px;border:0;background:transparent;color:#9AA3AF;display:grid;place-items:center;cursor:pointer}
+.bo-top .crumb{font-size:16px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bo-top .crumb .mu{color:#9AA3AF}.bo-top .crumb b{font-weight:700}
+.bo-top .tb{height:40px;padding:0 14px;border-radius:10px;border:1px solid #2C323B;background:#171A1F;color:#F2F4F7;font-weight:700;font-size:14px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.bo-wrap{display:flex;min-height:calc(100vh - 60px)}
+.bo-nav{width:240px;flex-shrink:0;border-right:1px solid #2C323B;padding:20px 12px;display:flex;flex-direction:column;gap:4px}
+.bo-nav a{display:flex;align-items:center;gap:12px;height:44px;padding:0 14px;border-radius:12px;color:#9AA3AF;text-decoration:none;font-size:15px}
+.bo-nav a.on{background:#171A1F;color:#F2F4F7;font-weight:700}
+.bo-main{flex:1;min-width:0;padding:32px 40px;display:flex;flex-direction:column;gap:24px}
+.bo h1{margin:0;font-size:28px;letter-spacing:-.03em}
+.bo .sub{margin:4px 0 0;color:#9AA3AF}
+.bo .card{background:#171A1F;border:1px solid #2C323B;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:18px}
+.bo .card h2{margin:0;font-size:18px;letter-spacing:-.02em}
+.bo .row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.bo label{display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:700;color:#9AA3AF}
+.bo input,.bo textarea,.bo select{padding:12px 14px;border:1px solid #2C323B;border-radius:12px;background:#07080A;color:#F2F4F7;font:inherit;font-weight:400;font-size:15px}
+.bo textarea{resize:vertical;min-height:72px;line-height:1.45}
+.bo .hint{font-weight:400;font-size:12px;color:#9AA3AF}
+.bo .hint.over{color:#FF6B6B}
+.bo .btn{height:44px;padding:0 18px;border-radius:12px;border:1px solid #2C323B;background:transparent;color:#F2F4F7;font-weight:700;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.bo .btn.primary{background:#3F2FEE;border-color:#3F2FEE;color:#fff}
+.bo .btn.ghost{border-color:transparent;color:#9AA3AF}
+.bo .head{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.bo .head .t{flex:1;min-width:220px}
+.bo .list{display:flex;flex-direction:column;gap:10px}
+.bo .item{background:#171A1F;border:1px solid #2C323B;border-radius:14px;padding:14px 16px;display:flex;align-items:center;gap:14px}
+.bo .item .grab{color:#9AA3AF;cursor:grab;font-size:18px;user-select:none}
+.bo .item .info{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+.bo .item .info b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bo .item .info small{font-size:12px;color:#9AA3AF;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bo .toggle{width:44px;height:26px;border-radius:13px;border:0;padding:3px;background:#3A414C;display:flex;cursor:pointer;flex-shrink:0}
+.bo .toggle span{width:20px;height:20px;border-radius:50%;background:#fff;transition:transform .15s}
+.bo .toggle[aria-checked="true"]{background:#3F2FEE}
+.bo .toggle[aria-checked="true"] span{transform:translateX(18px)}
+.bo .ic{width:40px;height:40px;border-radius:10px;background:#262B33;display:grid;place-items:center;flex-shrink:0;font-weight:700;color:#9AA3AF;font-size:12px}
+.bo .saved{font-size:13px;color:#9AA3AF}
+.bo .switch-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid #2C323B}
+.bo .switch-row b{display:block;font-size:15px;color:#F2F4F7}.bo .switch-row small{font-size:13px;color:#9AA3AF}
+.bo .tools{display:flex;gap:4px}
+.bo .iconbtn{width:36px;height:36px;border:1px solid #2C323B;border-radius:9px;background:transparent;color:#9AA3AF;cursor:pointer;display:grid;place-items:center}
+.bo .empty{padding:28px;border:1px dashed #2C323B;border-radius:14px;color:#9AA3AF;text-align:center}
+@media (max-width:860px){
+  .bo-wrap{flex-direction:column}
+  .bo-nav{width:auto;flex-direction:row;overflow-x:auto;border-right:0;border-bottom:1px solid #2C323B}
+  .bo-nav a{white-space:nowrap}
+  .bo-main{padding:24px 16px}
+  .bo .row2{grid-template-columns:1fr}
+}
