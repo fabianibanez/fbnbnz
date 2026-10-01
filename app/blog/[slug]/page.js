@@ -1,3 +1,4 @@
+import '../../globals.css';
 import { createSupabase, PROFILE_SLUG } from '../../lib/supabase';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
@@ -9,10 +10,8 @@ export default async function Article({ params }) {
   const supabase = createSupabase();
   const { data: profile } = await supabase.from('profiles').select('id, name').eq('slug', PROFILE_SLUG).single();
   if (!profile) notFound();
-  const { data: a } = await supabase.from('articles')
-    .select('*').eq('profile_id', profile.id).eq('slug', slug).eq('status', 'publicado').single();
+  const { data: a } = await supabase.from('articles').select('*').eq('profile_id', profile.id).eq('slug', slug).eq('status', 'publicado').single();
   if (!a) notFound();
-
   return (
     <main className="page">
       <div style={{ padding: '16px 12px' }}>
