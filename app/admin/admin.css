@@ -334,3 +334,26 @@
 .empty{padding:28px;border:1px dashed var(--bd);border-radius:14px;color:var(--mu);text-align:center}
 @media(max-width:1200px){.panel{width:320px;padding:32px 20px}}
 @media(max-width:960px){.panel{width:100%;border-left:0;border-top:1px solid var(--bd);flex-direction:row;flex-wrap:wrap;align-items:flex-start}}
+
+/* ── Enlaces ── */
+.lrow{display:flex;align-items:center;height:72px;border:1px solid var(--bd);border-radius:20px;background:var(--su);overflow:hidden;cursor:pointer;transition:border-color .15s}
+.lrow:hover{border-color:var(--bd2)}
+.lrow.sel{border-color:var(--ac)}
+.lrow.off .lt b{color:var(--mu)}
+.lrow.over{box-shadow:0 -2px 0 var(--ac)}
+.drag{width:44px;height:72px;border:0;background:transparent;display:grid;place-items:center;cursor:grab;color:var(--mu);flex-shrink:0}
+.drag:hover{color:var(--tx)}
+.lt{flex:1;min-width:0;padding:0 16px;display:flex;flex-direction:column;gap:4px}
+.lt b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:flex;align-items:center;gap:4px}
+.lt small{font-size:13px;color:var(--mu);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lclicks{width:110px;text-align:right;color:var(--mu);font-size:13px;flex-shrink:0;padding-right:8px}
+.ltog{width:70px;display:flex;justify-content:center;flex-shrink:0}
+.thumb{width:72px;height:72px;background:var(--ph);flex-shrink:0;background-size:cover;background-position:center}
+.thumb-edit{display:flex;align-items:center;gap:14px}
+.fx-demo{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.fx-opt{height:40px;padding:0 14px;border-radius:10px;border:1px solid var(--bd);background:var(--bg);color:var(--mu);font-weight:700;font-size:13px;cursor:pointer}
+.fx-opt:hover{border-color:var(--bd2);color:var(--tx)}
+.fx-opt[aria-pressed="true"]{border-color:var(--ac);color:var(--tx);background:var(--su)}
+.fxchip{display:inline-flex;align-items:center;font-size:12px;font-weight:700;color:var(--tx);border:1px solid var(--ac);border-radius:10px;padding:2px 8px;margin-left:8px;vertical-align:middle;flex-shrink:0}
+.actions{display:flex;gap:10px;align-items:center;margin-top:auto;flex-wrap:wrap}
+.grow{flex:1}
