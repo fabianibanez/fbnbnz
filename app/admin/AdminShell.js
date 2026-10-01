@@ -6,7 +6,7 @@ import { createBrowserSupabase } from '../lib/supabase-browser';
 
 const NAV = [
   ['/admin/resumen', 'Resumen', 'M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z'],
-  ['/admin', 'Perfil y acciones', 'M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z'],
+  ['/admin/perfil', 'Perfil y acciones', 'M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z'],
   ['/admin/enlaces', 'Enlaces', 'M10 14a4 4 0 0 0 6 0l3-3a4 4 0 0 0-6-6l-1 1M14 10a4 4 0 0 0-6 0l-3 3a4 4 0 0 0 6 6l1-1'],
   ['/admin/servicios', 'Servicios', 'M3 5h4v4H3zM10 5h4v4h-4zM17 5h4v4h-4zM3 12h4v4H3zM10 12h4v4h-4zM17 12h4v4h-4z'],
   ['/admin/articulos', 'Artículos', 'M6 3h12l3 6-9 12L3 9z'],
